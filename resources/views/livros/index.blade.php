@@ -1,7 +1,9 @@
 @extends('layout.layout')
 @section('title','Listagem')
-@section('content') 
-    @foreach($livros as $livro)
-        <li><a href="{{url('livros/'.$livros->id)}}" class="btn"><mark>{{$livros->TituloLivro}}</mark></a></li>
-    @endforeach
+@section('content')
+    <ul>
+        @foreach($livros as $livro)
+            <li><a href="{{url('livros/'.$livro->IDLivro)}}" class="btn"><mark>{{$livro->TituloLivro}}</mark></a></li>
+        @endforeach
+    </ul>
 @endsection

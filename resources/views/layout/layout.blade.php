@@ -13,8 +13,8 @@
 <body>
     <div class="container">
         <br>
-        <a href="{{url('livros/create')}}" class="btn btn-light shadow">Adicionar contato</a> |
-        <a href="{{url('livros/')}}" class="btn btn-light shadow">Listar</a>
+        <a href="{{url('livros/create')}}" class="btn btn-light shadow">Adicionar livro</a> |
+        <a href="{{url('/livros')}}" class="btn btn-light shadow">Listar livros</a>
         <br>
         <br>
         <br>
