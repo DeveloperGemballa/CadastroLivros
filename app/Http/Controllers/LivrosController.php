@@ -31,7 +31,7 @@ class LivrosController extends Controller
 
     public function buscar(Request $request) {
         $livros = Livro::where('TituloLivro','LIKE','%'.$request->input('busca').'%')->orwhere('AutorLivro','LIKE','%'.$request->input('busca').'%')->orwhere('EditoraLivro','LIKE','%'.$request->input('busca').'%')->orwhere('AnoLancamentoLivro','LIKE','%'.$request->input('busca').'%')->get();
-        return view('livro.index',array('livros' => $livros,'busca'=>$request->input('busca')));
+        return view('livros.index',array('livros' => $livros,'busca'=>$request->input('busca')));
     }
     /**
      * Store a newly created resource in storage.
@@ -73,8 +73,8 @@ class LivrosController extends Controller
      */
     public function edit($id)
     {
-        $livro = Livro::find($id);
-        return view("livros.edit",array("livro"=>$livro));
+        $livros = Livro::find($id);
+        return view("livros.edit",array("livro"=>$livros));
     }
 
     /**
