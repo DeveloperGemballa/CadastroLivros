@@ -33,7 +33,7 @@
     {!! Form::number('anolancamento', '', ['class'=>'form-control', 'required', 'placeholder' =>'Ano de lançamento']) !!}
     <hr>
     {!! Form::submit('Salvar',['class'=>'btn btn-primary shadow']) !!} |
-    {!!Form::button('Cancelar',['onclick'=>'javascript:history.go(-1)', 'class'=>'btn btn-secondary shadow'])!!}
+    {!!Form::button('Cancelar',['onclick'=>'javascript:history.go(-1)', 'class'=>'btn btn-danger shadow'])!!}
     {!! Form::close() !!}
 </div>
 @endsection

@@ -1,5 +1,5 @@
 @extends('layout.layout')
-@section('title','{{$livros->TituloLivro}}')
+@section('title',"$livros->TituloLivro")
 @section('content')
     <div class="alert shadow">
         <h1 class="display-3" align="center">Livro: <br> {{$livros->TituloLivro}}</h1>

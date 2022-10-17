@@ -26,10 +26,16 @@
         </div>
     </div>
     <hr>
+    <br>
+    <br>
 {{Form::close()}}
     <ul>
         @foreach($livros as $livro)
             <li><a href="{{url('livros/'.$livro->id)}}" class="btn"><mark>{{$livro->TituloLivro}}</mark></a></li>
         @endforeach
     </ul>
+    <br>
+    <div class="position-absolute start-50 translate-middle"> 
+        {{ $livros -> links() }}
+    </div>
 @endsection
