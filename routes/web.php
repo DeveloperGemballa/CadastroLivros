@@ -16,6 +16,7 @@ use App\Http\Controllers\LivrosController;
 
 Route::get('livros/buscar',[LivrosController::class,'buscar']);
 Route::resource('livros',LivrosController::class,);
+Route::resource('emprestimo',EmprestimosController::class,);
 Route::resource('/',LivrosController::class,);
 Route::get('/testes', function () {
     return view('welcome');

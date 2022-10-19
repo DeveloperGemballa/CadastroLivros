@@ -14,7 +14,8 @@
     <div class="container">
         <br>
         <a href="{{url('livros/create')}}" class="btn">Adicionar livro</a> |
-        <a href="{{url('/livros')}}" class="btn">Listar livros</a>
+        <a href="{{url('/livros')}}" class="btn">Listar livros</a> |
+        <a href="{{url('/emprestimo')}}" class="btn">Empréstimos de livros</a>
         <br>
         <br>
         <br>
